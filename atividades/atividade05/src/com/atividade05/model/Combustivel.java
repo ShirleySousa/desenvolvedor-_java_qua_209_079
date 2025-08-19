@@ -1,32 +1,45 @@
 package com.atividade05.model;
-import java.util.Scanner;
 
 public class Combustivel {
-    
 
-public class CombustivelMelhor {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    private double precoGasolina;
+    private double precoAlcool;
+    private static final double PROPORCAO_LIMITE = 0.7;
 
-        System.out.print("Digite o preço do litro da gasolina: R$ ");
-        double precoGasolina = scanner.nextDouble();
-
-        System.out.print("Digite o preço do litro do álcool: R$ ");
-        double precoAlcool = scanner.nextDouble();
-
-        double proporcao = precoAlcool / precoGasolina;
-
-        if (proporcao < 0.7) {
-            System.out.println("Compensa abastecer com álcool.");
-        } else {
-            System.out.println("Compensa abastecer com gasolina.");
-        }
-        System.out.println("Preço da gasolina: R$ " + precoGasolina);
-        System.out.println("Preço do álcool: R$ " + precoAlcool);       
-
-        scanner.close();
+    public Combustivel(double precoGasolina, double precoAlcool) {
+        this.precoGasolina = precoGasolina;
+        this.precoAlcool = precoAlcool;
     }
-}
 
+    public double getPrecoGasolina() {
+        return this.precoGasolina;
+    }
+
+    public void setPrecoGasolina(double precoGasolina) {
+        this.precoGasolina = precoGasolina;
+    }
+
+    public double getPrecoAlcool() {
+        return this.precoAlcool;
+    }
+
+    public void setPrecoAlcool(double precoAlcool) {
+        this.precoAlcool = precoAlcool;
+    }
+
+    public String verificarMelhorCombustivel() {
+        double proporcao = this.precoAlcool / this.precoGasolina;
+        if (proporcao < PROPORCAO_LIMITE) {
+            return "Compensa abastecer com álcool.";
+        } else {
+            return "Compensa abastecer com gasolina.";
+
+            // pode ser feito com ternario também:
+            // return (thisi.etanol >= this.gasolina * 0.7) ? "Compensa abastecer com álcool." : "Compensa abastecer com gasolina.";
+            // return proporcao < PROPORCAO_LIMITE ? "Compensa abastecer com álcool." : "Compensa abastecer com gasolina."; 
+        }
+    }
+
+   
 
 }
