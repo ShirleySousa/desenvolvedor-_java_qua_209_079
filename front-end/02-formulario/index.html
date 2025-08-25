@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name=" autor" content="Breno Pimentel"/>
+
+    <meta name="robots" content="index, fallow" />
+    <meta name="keywords" content="java, senai, industria, programação, qua209.079, Breno Pimentel"/>
+    <meta name="description" content="Sistema Fronte-End feito no curso de desenvolvedor Java vespertino do SENAI Taguatinga - DF."/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <hr />
+    <form method="">
+        <label for="Nome">Nome:</label><br/>
+        <input type="text" placeholder="Digite o seu Nome" minlength="3" maxlength="32" /><br/> <br/>
+        <label for="Idade">Idade:</label><br/>
+        <input type="number"  value="18" min="12" max="65" /><br/><br/>
+        <label for="dataNascimento">Data de Nacimento</label><br/>
+        <input type="date"/><br/><br/>
+        <label for="senha">Senha:</label><br />
+        <input type="password" />
+        <label for="genero"></label><br /><br />
+        <input type="radio" name="genero"/><span>Masculino</span><br/>
+        <input type="radio" name="genero"/><span>Feminino</span><br/>
+        <input type="radio" name="genero"/><span>Outros</span><br/><br/>
+                
+            <label for="escolaridade">Escolaridade:</label><br/>
+        <select>
+                  <option name="escolaridade">Escolha uma opção....</option>
+                  <option name="escolaridade">Nivel Fundamentel....</option>
+                  <option name="escolaridade">Nivel Medio....</option>
+                  <option name="escolaridade">Nivel Tecnico....</option>
+                  <option name="escolaridade">Nivel Superior....</option>
+                  <option name="escolaridade">Mestrado....</option>
+                  <option name="escolaridade">Doutorado....</option>
+        </select>
+        <br/><br/>
+                <label>Escolha as linguagens de programação que domina:</label><br/>
+                <input type="checkbox" name="linguagens"><span>C</span><br/>
+                <input type="checkbox" name="linguagens"><span>C++</span><br/>
+                <input type="checkbox" name="linguagens"><span>Java</span><br/>
+                <input type="checkbox" name="linguagens"><span>Python</span><br/>
+                <input type="checkbox" name="linguagens"><span>JavaScript</span><br/>
+                <input type="checkbox" name="linguagens"><span>SQL</span><br/><br/>
+        <label>Digite um comentario:</label><br/>
+        <textarea value="" rows="5" cols="55"></textarea><br/><br/>
+        <label>Envie um arquivo:</label><br/>
+        <input type="file"/><br/><br/>
+        <button type="submit">Cadastrar</button>
+        
+        
+
+
+    </form>
+</body>
+</html>
