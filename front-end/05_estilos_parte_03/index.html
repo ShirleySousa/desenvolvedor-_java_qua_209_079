@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="João Pedro" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linkando arquivos css -->
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+    <h1>Formulário com CSS</h1>
+    <hr />
+    <form method="">
+        <input type="text" placeholder="Nome" class="nome" />
+        <input type="text" placeholder="Sobrenome" class="sobrenome" />
+        <input type="tel" placeholder="Telefone:(00) 00000-0000" class="telefone" />
+        <input type="email" placeholder="Email: usuario@servidor.com" class="email" />
+        <input type="Profissão" placeholder="Profissão" class="profissao" />
+        <select class="Escolaridade">
+            <option>Informe a escolaridade</option>
+            <option>Fundamental</option>
+            <option>Médio</option>
+            <option>Superior</option>
+            <option>Pós-Graduação</option>
+            <option>Mestrado</option>
+            <option>Doutorado</option>
+        </select>
+
+        <select class="genero">
+            <option>Informe o gênero</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Desejo não informar</option>
+        </select>
+
+        <label>Cursos Realizados:</label><br>
+        <input type="checkbox" name="cursosrealizados" value="Inglês"> Inglês<br>
+        <input type="checkbox" name="cursosrealizados" value="Informática"> Informática<br>
+        <input type="checkbox" name="cursosrealizados" value="Excel"> Excel<br>
+        <input type="checkbox" name="cursosrealizados" value="Programação"> Programação<br>
+        <!-- ...existing code... -->
+
+        <input type="text" placeholder="CEP: 00.000-000" class="cep" />
+        <input type="text" placeholder="Cidade" class="cidade" />
+        <input type="text" placeholder="Endereço" class="endereco" />
+
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
