@@ -74,44 +74,184 @@
                 <h1>Formulário</h1>
 
                 <form>
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome:</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Digite primeiro seu nome">
+                    <!-- <div class="mb-3">
+                        <label for="nome" class="form-label">Nome e sobrenome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite nome e sobrenome" required>
                     </div>
                     <div class="mb-3">
-                        <label for="sobrnome" class="form-label">Sobrenome:</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Digite seu sobrenome">
+                        <label for="sobrnome" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite o número do telefone" minlength="14" maxlength="15"required
+                    </div>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">CPF:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="000.000.000-00" minlength="14" maxlength="15" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">CNH:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite o número da CNH" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                        <input type="email" class="form-control" id="email" placeholder="usuario@servidor.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="mensagem" class="form-label">Mensagem:</label>
                         <textarea class="form-control" id="mensagem" rows="4"
                             placeholder="Digite sua mensagem"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                     -->
+                    <form method="">
+                        <!-- linha 1 -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-7">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Nome Completo:</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-5">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Data de
+                                        nascimento:</span>
+                                    <input type="date" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- linha 2 -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">CPF:</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="000.000.000-00"
+                                        minlenght="14" maxlength="15" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Telefone:</span>
+                                    <input type="tel" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="(00) 00000-0000"
+                                        minlength="14" maxlength="15" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">E-mail:</span>
+                                    <input type="email" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="usuario@servidor.com"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- linha 3 -->
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Gênero:</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                        <option value="3">Outro</option>
+                                        <option value="4">Não desejo declarar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Estado civil:</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Escolha seu estado civil...</option>
+                                        <option value="1">Solteiro</option>
+                                        <option value="2">Casado</option>
+                                        <option value="3">Viúvo</option>
+                                        <option value="4">Divorciado</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-5">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Escolaridade:</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Escolha sua Escolaridade...</option>
+                                        <option value="1">Nivel fundamental</option>
+                                        <option value="2">Nivel médio</option>
+                                        <option value="3">Nivel superior</option>
+                                        <option value="4">Pós-graduação</option>
+                                        <option value="5">Mestrado</option>
+                                        <option value="6">Doutorado</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- linha 4 -->
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-4">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">CEP</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="00000-000"
+                                        minlength="10" maxlength="10" required>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-2">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">UF</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" minlength="2" maxlength="2"
+                                        required>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Município</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TODO -->
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-3">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Bairro</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Número</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col  md-6  col-lg-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Logradouro</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ...existing code... -->
+                        <input class="btn btn-primary" type="submit" value="Enviar">
+
+                        <!-- ...existing code... -->
 
 
-
-
-
-
-
-
-
-
-
+                    </form>
             </div>
-        </div>
-    </div>
-    <!-- fim do container -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+            <!-- fim do container -->
+            <!-- scripts -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
 </body>
-
-</html>
