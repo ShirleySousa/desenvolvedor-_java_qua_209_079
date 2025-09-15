@@ -7,32 +7,31 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-
 public class Pessoa implements Serializable {
-
-    // Atributos
+    //atributos
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private Long idPessoa;
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private long idPessoa;
     private String nome;
     private String cpf;
     private String email;
 
-    // Construtores
-    public Pessoa(Long idPessoa, String nome, String cpf, String email) {
-        this.idPessoa = idPessoa;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.email = email;
-    }
+    //construtor
 
-    public Long getIdPessoa() {
+
+    public Pessoa() {
+    }
+    
+    
+    //getters setters
+
+    public long getIdPessoa() {
         return this.idPessoa;
     }
 
-    public void setIdPessoa(Long idPessoa) {
+    public void setIdPessoa(long idPessoa) {
         this.idPessoa = idPessoa;
     }
 
@@ -59,4 +58,5 @@ public class Pessoa implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }

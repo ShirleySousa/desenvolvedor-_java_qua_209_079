@@ -1,0 +1,105 @@
+/* Reset de margens e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 30px 20px;
+}
+
+/* Estilizando o formulário */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+/* Título do formulário */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos labels */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Foco nos campos de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo dos botões de rádio */
+.genero {
+    margin-top: 10px;
+}
+
+.genero input {
+    margin-right: 10px;
+}
+
+/* Estilo do botão de envio */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
