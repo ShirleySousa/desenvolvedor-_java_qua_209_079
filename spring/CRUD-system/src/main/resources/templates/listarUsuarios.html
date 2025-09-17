@@ -64,11 +64,22 @@
             <div class="col-3">E-mail:</div>
         </div>
         <!-- Linhas dos usuários -->
-        <div th:each="usuario, iterStat : ${usuarios}" class="row border-bottom border-primary py-2 text-white">
-            <div class="col-1" th:text="${iterStat.count}"></div>
+        <div th:each="usuario, iterStat : ${usuarios}" class="row border-bottom border-primary py-2 text-white align-items-center">
+            <div class="col-1" th:text="${usuario.idPessoa}"></div>
             <div class="col-3" th:text="${usuario.nome}"></div>
             <div class="col-3" th:text="${usuario.cpf}"></div>
             <div class="col-3" th:text="${usuario.email}"></div>
+            <div class="col-2">
+                <a class="btn btn-warning btn-sm me-2"
+                   th:href="@{'/alterarUsuario/' + ${usuario.idPessoa}}">
+                    Alterar
+                </a>
+                <a class="btn btn-danger btn-sm"
+                   th:href="@{'/confirmarExclusao/' + ${usuario.idPessoa}}">
+                    Excluir
+                </a>
+            </div>
+        </div>
         </div>
         
         
