@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavanderia Lave e Leve</title>
+    <!-- Bootstrap 3 CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    
+    
+    
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .main-content {
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #337ab7;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        form input, form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .btn-agendar {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-inverse" style="background-image: linear-gradient(to bottom, #003300, #007700, #003300);">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- Botão hamburger para mobile -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- Marca com ícone e texto lado a lado -->
+      <a class="navbar-brand" href="/" style="color: white; font-size: 17px; display: flex; align-items: center;">
+        <img src="img/icone.jpg" alt="Ícone" width="40" style="margin-right: 8px;">
+        
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <ul class="nav navbar-nav">
+        <li><a href="/" style="color: white; font-size: 17px;">Home</a></li>
+        <li><a href="/cadastrar" style="color: white; font-size: 17px;">Cadastrar usuário</a></li>
+        <li><a href="/listarUsuarios" style="color: white; font-size: 17px;">Listar Usuários</a></li>
+        <li><a href="/sobre" style="color: white; font-size: 17px;">Sobre</a></li>
+        <li><a href="/endereco" style="color: white; font-size: 17px;">Endereço e localização</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</nav>
+
+    <div class="main-content">
+        <h1 class="text-center">Lavanderia Lave e Leve</h1>
+        <p class="text-center">Cuidando das suas roupas com carinho e eficiência</p>
+
+        <section id="missao">
+            <h2>Missão</h2>
+            <p>Oferecer serviços de lavanderia com qualidade, pontualidade e respeito ao meio ambiente, garantindo a satisfação dos nossos clientes.</p>
+        </section>
+
+        <section id="visao">
+            <h2>Visão</h2>
+            <p>Ser reconhecida como a melhor lavanderia da região, inovando constantemente e mantendo um alto padrão de atendimento e tecnologia.</p>
+        </section>
+
+        <section id="valores">
+            <h2>Valores</h2>
+            <ul>
+                <li>Comprometimento com o cliente</li>
+                <li>Qualidade no serviço</li>
+                <li>Responsabilidade ambiental</li>
+                <li>Ética e transparência</li>
+                <li>Inovação contínua</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="mailto:exemplo@lavanderialaveeleve.com" method="POST" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <a class="whatsapp-button" href="https://wa.me/5599999999999" target="_blank">
+                📱 Fale conosco no WhatsApp
+            </a>
+        </section>
+
+        <section id="agendamento">
+            <h2>Agende um Serviço</h2>
+            <p>Clique no botão abaixo para agendar uma coleta:</p>
+            <a href="https://forms.gle/seu-link-de-agendamento" target="_blank" class="btn-agendar">
+                Agendar Coleta
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Lavanderia Lave e Leve - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
